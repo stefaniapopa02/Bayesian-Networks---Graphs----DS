@@ -1,0 +1,34 @@
+In fisierul header am creat 2 structuri, dupa modelul celor prezentate la curs, la care am 
+adaugat/modificat cateva campuri:
+ -pentru fiecare nod:
+     --->idx = retine indexul la care un nod este stocat in vectorul elements
+     --->ancestors = vector de care ne folosim pe tot parcursul temei; il folosesc ca vector 
+                     de stramosi, de parinti, dar si ca drum parcurs intre 2 noduri
+     --->no_ancestors = nr de elemente ale vectorului anterior
+ -pentru graf:
+      --->elements = vector in care retinem toate nodurile si datele lor
+
+Pe tot parcursul temei, am dat nume sugestive variabilelor si functiilor, pentru a se putea 
+deduce cu usurinta scopul si utilitatea lor.
+
+CERINTA I
+        Problema ciclicitatii grafurilor orientate a fost rezolvata prin parcurgerea in adancime 
+    a grafului. Cu ajutorul algoritmului DFS am putut retine stramosii fiecarui nod, raportandu-ne 
+    la o anumita cale.
+        Daca pe calea curenta, intalneam un nod care se regasea printre stramosii nodului anterior,
+    atunci, in mod evident, graful era ciclic.
+
+CERINTA II
+        Pentru a fi totul cat mai clar, am  urmat notatiile din enuntul temei: x, y pentru cele doua 
+    variabile pentru care vrem sa verificam independenta conditionala, iar o1, o2, . . . , on pentru
+    variabilele observate.
+        In aceasta cerinta, am urmat intocmai pasii prezentati in enuntul temei, structurand functiile
+    corespunzator cerintelor de la fiecare pas.
+        Am avut nevoie de o copie a grafului initial(cu aceasta am lucrat de fapt), pentru fiecare set 
+    de interogari, pentru a nu strica graful de la care am plecat si pentru a ne putea folosi de el in 
+    continuare.
+        Si in aceasta cerinta m-am folosit de algoritmul DFS, putin prelucrat, pentru extragerea datelor 
+    de care aveam nevoie in scopul rezolvarii pasilor dati.
+
+
+ 
